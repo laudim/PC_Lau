@@ -11,5 +11,5 @@ Serial.begin(9600); // Start serial communication at 9600 bps
 void loop() {
 val = analogRead(sensorPin); //read sensor and assign to variable called val
 delay(100); // Wait 100 milliseconds
-Serial.println(val);
+Serial.write(val);
 }
